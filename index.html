@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Celulosa de Misiones: exportaciones 2020-2025</title>
+<meta name="description" content="Análisis de las exportaciones de celulosa de Misiones entre 2020 y 2025: valor, volumen, precio, destinos y cambios en derechos de exportación y reintegros.">
+<meta name="theme-color" content="#0F2E29">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Literata:opsz,wght@7..72,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pulp:#F1F5F2; --pulp2:#E3EBE6; --spruce:#0F2E29; --fiber:#2E6F5C; --fiber-lt:#8FBFA5;
+  --parana:#2A6F97; --plum:#6F5A8E; --ocre:#B98A12; --ocre-ink:#6B4E00; --muted:#46605A; --line:#C3D2C9;
+  --sans:'Archivo','Arial Narrow','Helvetica Neue',Arial,sans-serif;
+  --serif:'Literata',Georgia,'Times New Roman',serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--pulp);color:var(--spruce);font-family:var(--serif);font-size:1.0625rem;line-height:1.65;-webkit-text-size-adjust:100%}
+a{color:var(--parana)}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--parana);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(1rem,4vw,2rem)}
+.skip{position:absolute;left:-999px;top:0;background:var(--spruce);color:var(--pulp);padding:.6rem 1rem;font-family:var(--sans);z-index:60}
+.skip:focus{left:0}
+
+/* Barra superior */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(241,245,242,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:.4rem 1.2rem;min-height:52px;flex-wrap:wrap;padding-block:.3rem}
+.brand{font-family:var(--sans);font-weight:800;font-stretch:78%;font-size:1.2rem;color:var(--spruce);text-decoration:none}
+.topbar nav{display:flex;gap:.2rem 1.1rem;flex-wrap:wrap;font-family:var(--sans);font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted);text-decoration:none;padding:.3rem 0}
+.topbar nav a:hover{color:var(--spruce);text-decoration:underline}
+
+/* Portada */
+.hero{padding:clamp(2rem,6vw,4.5rem) 0 clamp(2.5rem,6vw,4rem)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+h1{font-family:var(--sans);font-weight:800;font-stretch:78%;font-size:clamp(2.5rem,6.2vw,4.6rem);line-height:.98;letter-spacing:-.01em;margin:0 0 1.2rem}
+.lede{font-size:1.15rem;max-width:34em;margin:0 0 1rem}
+.byline{font-family:var(--sans);font-size:.9rem;color:var(--muted);margin:0}
+.rings-wrap svg{display:block;width:100%;height:auto;max-width:520px;margin-inline:auto}
+.ring-caption{font-family:var(--sans);font-size:.88rem;color:var(--muted);max-width:32em;margin:.9rem auto 0}
+.ring{cursor:pointer}
+.ring circle,.ring text{animation:ring-in .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 140ms)}
+.ring circle{transform-box:fill-box;transform-origin:50% 50%}
+.ring:focus{outline:none}
+.rings:hover .ring:not(:hover),.rings:focus-within .ring:not(:focus){opacity:.5}
+@keyframes ring-in{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:scale(1)}}
+.rl{font:800 10.5px var(--sans)}
+.rv{font:600 10px var(--sans)}
+
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem 2rem;margin:clamp(2rem,5vw,3.5rem) 0 0;padding:1.5rem 0 0;border-top:1px solid var(--line)}
+.fact dt{font-family:var(--sans);font-weight:800;font-stretch:80%;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1;margin:0 0 .4rem}
+.fact dd{margin:0;font-size:.95rem;line-height:1.45;color:var(--muted)}
+
+/* Secciones */
+section.band{padding:clamp(3rem,7vw,5.5rem) 0}
+section.alt{background:var(--pulp2)}
+h2{font-family:var(--sans);font-weight:750;font-stretch:84%;font-size:clamp(1.65rem,3.4vw,2.45rem);line-height:1.12;letter-spacing:-.005em;margin:0 0 1.1rem;max-width:24em}
+h3{font-family:var(--sans);font-weight:700;font-size:1.15rem;margin:2.2rem 0 .6rem}
+.prose{max-width:62ch}
+.prose p{margin:0 0 1rem}
+.chart{margin:2rem 0 0;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.note{font-family:var(--sans);font-size:.85rem;color:var(--muted);margin:.75rem 0 0;max-width:72ch}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;font-family:var(--sans);font-size:.85rem;color:var(--muted);margin:.8rem 0 0}
+.sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:.4rem;border:1.5px solid}
+details.data{margin:1.2rem 0 0;font-family:var(--sans);font-size:.92rem}
+details.data summary{cursor:pointer;font-weight:600;color:var(--parana);padding:.3rem 0}
+
+/* Gráficos SVG */
+.t-axis{font:500 12px var(--sans);fill:var(--muted)}
+.t-val{font:700 13px var(--sans);fill:var(--spruce)}
+.t-year{font:700 13px var(--sans);fill:var(--spruce)}
+.t-yoy{font:600 12px var(--sans)}
+.t-small{font:500 11.5px var(--sans);fill:var(--muted)}
+.panel-title{font:700 13px var(--sans);fill:var(--spruce)}
+.up{fill:#1F6B55}.down{fill:#9A3B37}
+.grid{stroke:rgba(15,46,41,.14);stroke-width:1}
+.bar{fill:var(--fiber)}
+.bar.prov{fill:url(#hatchFiber)}
+.hit{cursor:pointer}
+.hit:focus{outline:none}
+.hit:focus-visible .bar,.hit:focus-visible .mark{stroke:var(--parana);stroke-width:3}
+.hit:hover .bar,.hit:hover .mark{filter:brightness(1.12)}
+
+/* Peso en exportaciones provinciales */
+.peso-row{display:grid;grid-template-columns:3.4rem minmax(0,1fr) 9.5rem;gap:.8rem;align-items:center;margin:.7rem 0;font-family:var(--sans)}
+.peso-year{font-weight:700}
+.peso-track{height:34px;background:#D3DFD8;border-radius:4px;overflow:hidden}
+.peso-fill{height:100%;background:var(--fiber)}
+.peso-fill.prov{background:repeating-linear-gradient(135deg,var(--fiber) 0 6px,#6FA893 6px 10px)}
+.peso-pct{font-weight:800;font-stretch:85%;font-size:1.3rem;line-height:1.1}
+.peso-sub{font-size:.8rem;color:var(--muted);line-height:1.3}
+
+/* Tablas */
+.tablewrap{overflow-x:auto;margin:1.2rem 0 0}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:.92rem}
+th,td{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;font-size:.85rem;color:var(--muted);white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+
+/* Chips */
+.chip{display:inline-block;font-family:var(--sans);font-size:.78rem;font-weight:600;padding:.1rem .55rem;border-radius:999px;border:1px solid;white-space:nowrap;line-height:1.5}
+.chip.ok{background:#D5EBDD;border-color:var(--fiber);color:#0F2E29}
+.chip.prob{background:#FFF0C7;border-color:var(--ocre);color:var(--ocre-ink)}
+.chip.tbc{background:var(--pulp);border-color:#8AA095;color:var(--muted)}
+.chip.gen{background:transparent;border-color:var(--line);color:var(--muted)}
+.chip.sin{background:transparent;border-color:transparent;color:var(--muted);padding-left:0}
+.chip.no{background:#F6D9D6;border-color:#B0413E;color:#7A2320}
+
+/* Llamados */
+.callout{margin:1.8rem 0 0;padding:1rem 1.2rem;border-left:4px solid var(--ocre);background:#FFF6DA;color:#3F3000;font-family:var(--sans);font-size:.95rem;max-width:72ch}
+.callout p{margin:0 0 .6rem}
+.callout p:last-child{margin:0}
+.callout ul{margin:.3rem 0 0;padding-left:1.2rem}
+.callout li{margin:.25rem 0}
+
+/* Línea de tiempo */
+.toolbar{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;margin:1.8rem 0 0}
+.toggle{font-family:var(--sans);font-size:.9rem;font-weight:600;background:transparent;border:1.5px solid var(--spruce);color:var(--spruce);border-radius:999px;padding:.45rem 1rem;cursor:pointer}
+.toggle[aria-pressed="true"]{background:var(--spruce);color:var(--pulp)}
+.tl-legend{display:flex;flex-wrap:wrap;gap:.3rem 1rem;font-family:var(--sans);font-size:.85rem;color:var(--muted)}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;border:2px solid var(--muted);margin-right:.4rem;vertical-align:-1px}
+.dot.ok{background:var(--fiber);border-color:var(--fiber)}
+.dot.prob{background:var(--ocre);border-color:var(--ocre)}
+.timeline{list-style:none;margin:1.2rem 0 0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding-left:1.4rem}
+.timeline li::before{content:"";position:absolute;left:-7px;top:1.05rem;width:12px;height:12px;border-radius:50%;background:var(--pulp);border:2px solid var(--muted)}
+.timeline li[data-rel="ok"]::before{background:var(--fiber);border-color:var(--fiber)}
+.timeline li[data-rel="prob"]::before{background:var(--ocre);border-color:var(--ocre)}
+.timeline li[hidden]{display:none}
+details.norm summary{cursor:pointer;list-style:none;padding:.6rem 0;display:grid;grid-template-columns:7.2rem minmax(0,1fr) 1.2rem;gap:.2rem 1rem;align-items:baseline}
+details.norm summary::-webkit-details-marker{display:none}
+details.norm summary::after{content:"+";font-family:var(--sans);font-weight:700;color:var(--muted);text-align:right}
+details.norm[open] summary::after{content:"\2212"}
+.norm-date{font-family:var(--sans);font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.norm-name{font-family:var(--sans);font-weight:700;font-size:1.02rem;margin-right:.5rem}
+.norm-short{display:block;font-size:.95rem;color:var(--muted);line-height:1.5;margin-top:.15rem}
+.norm-body{padding:0 0 1rem 8.2rem;font-size:.95rem;max-width:70ch}
+.norm-body ul{margin:0 0 .6rem;padding-left:1.1rem}
+.norm-body li{margin:.2rem 0}
+.norm-body a{font-family:var(--sans);font-size:.9rem}
+
+/* Método */
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 3rem}
+.cols ul{margin:0;padding-left:1.2rem}
+.cols li{margin:.4rem 0}
+
+/* Pie */
+.site-foot{background:var(--spruce);color:#DCE8E1;padding:clamp(2.5rem,6vw,3.5rem) 0;font-family:var(--sans);font-size:.95rem}
+.site-foot h2{color:#F1F5F2;font-size:1.5rem;margin-bottom:.8rem}
+.site-foot a{color:#A9D3C0}
+.site-foot ul{margin:.5rem 0 1.4rem;padding-left:1.2rem}
+.site-foot li{margin:.35rem 0}
+.foot-small{color:#A9C2B6;font-size:.85rem;margin:1.6rem 0 0}
+
+/* Tooltip */
+.tip{position:fixed;z-index:50;pointer-events:none;background:var(--spruce);color:#F1F5F2;font-family:var(--sans);font-size:.85rem;line-height:1.45;padding:.55rem .75rem;border-radius:6px;max-width:270px;box-shadow:0 6px 20px rgba(15,46,41,.25);opacity:0;left:0;top:0}
+.tip.on{opacity:1}
+
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cols{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .facts{grid-template-columns:1fr}
+  details.norm summary{grid-template-columns:minmax(0,1fr) 1.2rem}
+  .norm-date{grid-column:1 / -1}
+  .norm-body{padding-left:0}
+  .peso-row{grid-template-columns:3rem minmax(0,1fr)}
+  .peso-row .peso-val{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ring circle,.ring text{animation:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="hatchFiber" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><rect width="7" height="7" fill="#2E6F5C"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A9D3C0" stroke-width="2.4"/></pattern>
+    <pattern id="hatchDeep" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><rect width="7" height="7" fill="#1B5E4C"/><line x1="0" y1="0" x2="0" y2="7" stroke="#8FBFA5" stroke-width="2.4" opacity=".65"/></pattern>
+    <pattern id="hatchBR" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="6" height="6" fill="#DCEBE3"/><line x1="0" y1="0" x2="0" y2="6" stroke="#2E6F5C" stroke-width="2"/></pattern>
+    <pattern id="hatchCN" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="6" height="6" fill="#E9E3F1"/><line x1="0" y1="0" x2="0" y2="6" stroke="#6F5A8E" stroke-width="2"/></pattern>
+    <pattern id="hatchUS" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="6" height="6" fill="#DAE9F2"/><line x1="0" y1="0" x2="0" y2="6" stroke="#2A6F97" stroke-width="2"/></pattern>
+  </defs>
+</svg>
+<a class="skip" href="#contenido">Ir al contenido</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Celulosa de Misiones</a>
+    <nav aria-label="Secciones">
+      <a href="#evolucion">Evolución</a>
+      <a href="#precio">Precio y volumen</a>
+      <a href="#peso">Peso provincial</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#normas">Normas</a>
+      <a href="#metodo">Método</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>Misiones exportó USD 738 millones en celulosa entre 2020 y 2025</h1>
+          <p class="lede">Un análisis de la pasta para papel misionera: cuánto se vendió, a qué precio, adónde y con qué derechos de exportación y reintegros. Incluye lo que se pudo confirmar y lo que no.</p>
+          <p class="byline">Proyecto de Comercio Exterior. Datos del IPEC Misiones y del Ministerio de Economía; el dato de 2025 es provisorio.</p>
+        </div>
+        <div class="rings-wrap">
+          <div id="rings" class="rings"></div>
+          <p class="ring-caption">Cada anillo es un año, de 2020 en el centro a 2025 en el borde. Cuanto más ancho el anillo, más dólares se exportaron. El anillo con trama (2025) es un dato provisorio. Los números son millones de dólares.</p>
+        </div>
+      </div>
+      <dl class="facts">
+        <div class="fact"><dt>USD 148,3 M</dt><dd>exportados en 2025, el máximo del período (dato provisorio)</dd></div>
+        <div class="fact"><dt>+51,8%</dt><dd>de crecimiento del valor entre 2020 y 2025, unos 8,7% por año</dd></div>
+        <div class="fact"><dt>27% a 30%</dt><dd>de lo que exporta Misiones es celulosa (años 2021, 2022, 2024 y 2025)</dd></div>
+        <div class="fact"><dt>0%</dt><dd>derecho de exportación desde el 27/01/2025 para la posición 4703.11.00; el resto de las pastas está por confirmar</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band alt" id="evolucion">
+    <div class="wrap">
+      <h2>El valor exportado creció 51,8% entre 2020 y 2025, con dos caídas seguidas en el medio</h2>
+      <div class="prose">
+        <p>En 2020 la celulosa misionera vendió al exterior USD 97,7 millones. En 2021 subió a USD 141,0 millones y después bajó en 2022 (−9,5%) y en 2023 (−19,0%). En 2024 y 2025 se recuperó hasta llegar a USD 148,3 millones, el máximo del período.</p>
+        <p>En total fueron USD 738 millones en seis años, un crecimiento promedio de 8,7% anual. El valor FOB es lo que vale la mercadería puesta a bordo, sin flete ni seguro internacional.</p>
+      </div>
+      <div class="chart" id="chart-fob"></div>
+      <p class="note">Valor FOB anual de la pasta para papel de Misiones, en millones de dólares. Fuente: IPEC Misiones con datos del INDEC; el dato de 2023 es del Ministerio de Economía. Pasá el cursor o tocá una barra para ver el detalle. *2025: dato provisorio.</p>
+      <details class="data"><summary>Ver los datos en una tabla</summary><div class="tablewrap" id="tbl-fob"></div></details>
+    </div>
+  </section>
+
+  <section class="band" id="precio">
+    <div class="wrap">
+      <h2>La caída de 2022 fue de volumen: el precio subió 18% y las toneladas bajaron 23%</h2>
+      <div class="prose">
+        <p>Al dividir el valor exportado por las toneladas se obtiene un precio promedio por tonelada. Sirve para ver si un cambio en las ventas vino de vender más o menos, o de un precio distinto. No es una cotización de mercado.</p>
+      </div>
+      <div class="chart" id="chart-vol"></div>
+      <p class="note">s/d: no hay toneladas publicadas a nivel provincial para 2020 y 2023. Fuente: IPEC Misiones. *2025: dato provisorio.</p>
+      <div class="tablewrap">
+        <table>
+          <caption class="note" style="text-align:left;caption-side:top;margin:0 0 .4rem">Qué explica cada cambio</caption>
+          <thead><tr><th>Período</th><th class="num">Valor</th><th class="num">Volumen</th><th class="num">Precio</th></tr></thead>
+          <tbody>
+            <tr><td>2021 a 2022</td><td class="num">−9,5%</td><td class="num">−23,3%</td><td class="num">+18,0%</td></tr>
+            <tr><td>2022 a 2025</td><td class="num">+16,2%</td><td class="num">+30,3%</td><td class="num">−10,8%</td></tr>
+            <tr><td>2024 a 2025</td><td class="num">+23,0%</td><td class="num">+23,0%</td><td class="num">−0,1%</td></tr>
+            <tr><td>2021 a 2025</td><td class="num">+5,2%</td><td class="num">−0,1%</td><td class="num">+5,3%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose" style="margin-top:1.4rem">
+        <p>Entre 2024 y 2025 el precio no se movió (756 USD por tonelada) y el volumen subió 23,0%: todo el crecimiento de 2025 vino de exportar más toneladas.</p>
+        <p>Para 2023 no hay toneladas publicadas. Un cálculo orientativo con el crecimiento de volumen que informó el IPEC para 2024 (+27,3%, dato provisorio) sugiere unas 125.000 toneladas y un precio cercano a 825 USD por tonelada. De ser así, esa caída también habría sido sobre todo de volumen. Es una estimación, no un dato publicado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="peso">
+    <div class="wrap">
+      <h2>Casi tres de cada diez dólares que exporta Misiones son celulosa</h2>
+      <div class="prose">
+        <p>En los años con dato, la pasta para papel fue entre el 27% y el 30% de todo lo que exportó la provincia. En 2025 también fue el 89,0% del valor de las manufacturas de origen industrial misioneras.</p>
+      </div>
+      <div class="chart" id="chart-peso" role="list" aria-label="Participación de la celulosa en las exportaciones totales de Misiones"></div>
+      <p class="note">La barra completa representa el total exportado por Misiones en cada año. Fuente: informes de exportaciones del IPEC Misiones. *2025: dato provisorio.</p>
+    </div>
+  </section>
+
+  <section class="band" id="destinos">
+    <div class="wrap">
+      <h2>Brasil habría perdido peso y Estados Unidos lo habría ganado, pero son estimaciones</h2>
+      <div class="prose">
+        <p>Los datos oficiales por provincia, producto y país de destino no se publican completos, porque el INDEC protege la información cuando hay pocos exportadores. Por eso los porcentajes de este gráfico son rangos estimados. Solo Brasil (33,6%) y China (19,0%) de 2022 se presentan como datos de un informe oficial, que no se pudo contrastar.</p>
+      </div>
+      <div class="callout">
+        <p><strong>Cómo leer el gráfico.</strong> Cada barra es un rango: el valor real estaría entre el mínimo y el máximo. Las barras con trama son estimaciones y los puntos llenos son datos oficiales sin contrastar. No se muestran otros destinos.</p>
+      </div>
+      <div class="chart" id="chart-dest"></div>
+      <div class="legend" aria-hidden="true">
+        <span><span class="sw" style="background:#DCEBE3;border-color:#2E6F5C"></span>Brasil</span>
+        <span><span class="sw" style="background:#E9E3F1;border-color:#6F5A8E"></span>China</span>
+        <span><span class="sw" style="background:#DAE9F2;border-color:#2A6F97"></span>Estados Unidos</span>
+      </div>
+      <p class="note">Porcentaje del valor exportado de celulosa de Misiones. Fuente: estimaciones reunidas con Perplexity; no son datos oficiales salvo lo indicado.</p>
+      <div class="prose" style="margin-top:1.4rem">
+        <p>Con estos rangos, el envío a Brasil habría pasado de unos USD 43 millones en 2022 a entre USD 22 y 30 millones en 2025, y el de Estados Unidos de entre USD 19 y 26 millones a entre USD 52 y 67 millones.</p>
+        <p>El rango de Estados Unidos parece alto: en 2025 Misiones exportó a ese país USD 87,2 millones en total, sumando todos sus productos. Conviene leerlo como tendencia y no como cifra.</p>
+      </div>
+      <details class="data"><summary>Ver los rangos en una tabla</summary><div class="tablewrap" id="tbl-dest"></div></details>
+    </div>
+  </section>
+
+  <section class="band alt" id="normas">
+    <div class="wrap">
+      <h2>El derecho de exportación de la celulosa bajó a 0% en enero de 2025</h2>
+      <div class="prose">
+        <p>Los derechos de exportación (D.E.) son un impuesto que se cobra sobre lo que se vende al exterior. Desde 2021 la celulosa habría pagado 4,5%, y en enero de 2025 el Decreto 38/2025 lo llevó a 0% para la posición 4703.11.00.</p>
+        <p>El Draw Back devuelve los derechos de importación de los insumos que se traen para producir lo que se exporta. Los reintegros devuelven impuestos internos. Ambos tuvieron cambios más acotados: un trámite más simple para el Draw Back en 2022 y, en noviembre de 2025, la opción de cobrar en dólares los reintegros pendientes.</p>
+      </div>
+
+      <div class="toolbar">
+        <button class="toggle" id="tl-filter" type="button" aria-pressed="false">Mostrar solo las que pueden afectar a la celulosa</button>
+        <div class="tl-legend" aria-hidden="true">
+          <span><span class="dot ok"></span>Confirmada</span>
+          <span><span class="dot prob"></span>Probable</span>
+          <span><span class="dot"></span>Otras</span>
+        </div>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+
+      <h3>Qué está confirmado año por año</h3>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Año</th><th>D.E. según Perplexity</th><th>Estado</th><th>Qué se pudo confirmar</th></tr></thead>
+          <tbody id="tbl-de"></tbody>
+        </table>
+      </div>
+      <p class="note">El reintegro de 4,5% durante todo el período que indicó Perplexity no pudo confirmarse en ninguna de las normas consultadas.</p>
+
+      <div class="callout">
+        <p><strong>Lo que estos datos no permiten afirmar</strong></p>
+        <ul>
+          <li>Que la baja del D.E. de 2025 causó el crecimiento de ese año. Coinciden en el tiempo, pero también pudieron influir la producción, la demanda o el tipo de cambio.</li>
+          <li>Que la baja alcance a lo que más exporta Misiones. El principal producto es la pasta de conífera blanqueada (posiciones 4703.21.00 y 4703.29.00), que no figura en el anexo del Decreto 38/2025.</li>
+          <li>Que el D.E. explique las caídas de 2022 y 2023: en esos años se habría mantenido el 4,5%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="metodo">
+    <div class="wrap">
+      <h2>Cómo se armó este análisis y qué límites tiene</h2>
+      <div class="prose">
+        <p>Perplexity reunió los datos y las normas. Cuaderno Gemini organizó los tres archivos como fuentes y sirvió para consultarlos y contrastar las cifras. Claude los contrastó con los informes originales del IPEC Misiones y con los textos oficiales de los decretos, hizo el análisis y armó esta página.</p>
+      </div>
+      <div class="cols" style="margin-top:1.6rem">
+        <div>
+          <h3 style="margin-top:0">Correcciones que se hicieron</h3>
+          <ul>
+            <li>El valor de 2020 pasó de USD 96,5 M a USD 97,66 M, según el IPEC.</li>
+            <li>El D.E. de 4,5% rige desde 2021 y no desde 2020.</li>
+            <li>No hay norma que lleve la celulosa a 0% en 2024: la baja verificada es de enero de 2025.</li>
+            <li>El reintegro de 4,5% que se había indicado no se pudo confirmar.</li>
+            <li>Se reemplazaron enlaces incorrectos al Boletín Oficial.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Límites</h3>
+          <ul>
+            <li>Faltan las toneladas de 2020 y 2023.</li>
+            <li>El dato de 2025 es provisorio.</li>
+            <li>Los destinos son estimaciones.</li>
+            <li>El D.E. de 2021 a 2024 es probable, pero no está confirmado por posición arancelaria.</li>
+            <li>No se pudieron consultar los anexos de los decretos 1060/2020 y 305/2025 ni el Anexo I del 557/2023.</li>
+            <li>La Resolución 212/2022 no se contrastó con su texto oficial.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h2>Archivos y fuentes</h2>
+    <ul>
+      <li id="link-drive"></li>
+      <li id="link-github"></li>
+    </ul>
+    <p style="margin:0">Fuentes consultadas</p>
+    <ul>
+      <li>IPEC Misiones: <a href="https://www.ipec.misiones.gov.ar/wp-content/uploads/2023/05/IPEC-Misiones-Exportaciones-A%C3%B1os-2021-2022.pdf">Exportaciones 2021-2022</a> y <a href="https://www.ipec.misiones.gov.ar/wp-content/uploads/2026/05/IPEC_Misiones_Exportaciones-2025.pdf">Exportaciones 2025</a>.</li>
+      <li>Ministerio de Economía: <a href="https://www.argentina.gob.ar/sites/default/files/exportaciones_provinciales-2023.pptx.pdf">Exportaciones provinciales 2023</a> e <a href="https://www.argentina.gob.ar/sites/default/files/misiones_06_2023.pdf">Informe productivo de Misiones</a>.</li>
+      <li>Normas: <a href="https://www.argentina.gob.ar/normativa/nacional/decreto-1060-2020-345886/texto">Decreto 1060/2020</a>, <a href="https://www.cira.org.ar/es/servicios/normativas-servicios/decreto/decreto-38-2025/">Decreto 38/2025</a> (con su <a href="https://www.cira.org.ar/wp-content/uploads/anexo_7291708_1.pdf">Anexo I</a>), <a href="https://www.argentina.gob.ar/normativa/nacional/decreto-305-2025-412414/texto">Decreto 305/2025</a> y <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/334907/20251125">Resolución General 5792/2025</a>.</li>
+    </ul>
+    <p class="foot-small">Proyecto de Comercio Exterior. Datos reunidos con Perplexity, verificados y analizados con Claude. Revisado en septiembre de 2026.</p>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip"></div>
+<noscript><p style="font-family:sans-serif;padding:1rem;text-align:center">Los gráficos necesitan JavaScript. Los datos están disponibles en las tablas de cada sección.</p></noscript>
+
+<script>
+(function(){
+'use strict';
+
+/* Completá estos dos enlaces antes de publicar */
+var LINKS = { drive: 'https://drive.google.com/drive/folders/1kf6JNJjZs-Tl4Chumv-0yEhEmlAd5DhO', github: 'https://github.com/yesimarquez2008gmailcom-creator/celulosa-misiones-' };
+
+var nf = function(n, d){ d = (d === undefined) ? 1 : d; return n.toLocaleString('es-AR', {minimumFractionDigits:d, maximumFractionDigits:d}); };
+var sg = function(v){ return (v > 0 ? '+' : (v < 0 ? '\u2212' : '')) + nf(Math.abs(v), 1) + '%'; };
+
+/* ---------- Datos ---------- */
+var DATA = [
+  {y:2020, fob:97657800,  tn:null,       prov:false, src:'IPEC Misiones (contrastado)'},
+  {y:2021, fob:140986513, tn:196225.667, prov:false, src:'IPEC Misiones (contrastado)'},
+  {y:2022, fob:127547352, tn:150458.702, prov:false, src:'IPEC Misiones (contrastado)'},
+  {y:2023, fob:103300000, tn:null,       prov:false, src:'Ministerio de Economía (sin contrastar)'},
+  {y:2024, fob:120574701, tn:159301.010, prov:false, src:'IPEC Misiones (contrastado)'},
+  {y:2025, fob:148272570, tn:196006.263, prov:true,  src:'IPEC Misiones (provisorio)'}
+];
+DATA.forEach(function(d){ d.M = d.fob / 1e6; d.px = d.tn ? d.fob / d.tn : null; });
+
+var PESO = [
+  {y:2021, total:465336938, prov:false},
+  {y:2022, total:438221861, prov:false},
+  {y:2024, total:441471721, prov:false},
+  {y:2025, total:532799211, prov:true}
+];
+
+var SERIES = [
+  {k:'br', name:'Brasil',      col:'#2E6F5C', pat:'hatchBR'},
+  {k:'cn', name:'China',       col:'#6F5A8E', pat:'hatchCN'},
+  {k:'us', name:'EE.UU.',      col:'#2A6F97', pat:'hatchUS'}
+];
+var DEST = [
+  {y:2020, br:[35,40],     cn:[15,20], us:[5,10]},
+  {y:2021, br:[30,35],     cn:[20,25], us:[10,15]},
+  {y:2022, br:[33.6,33.6], cn:[19,19], us:[15,20], off:['br','cn']},
+  {y:2023, br:[30,35],     cn:[15,20], us:[20,25]},
+  {y:2024, br:[16,20],     cn:[10,15], us:[30,40]},
+  {y:2025, br:[15,20],     cn:[10,15], us:[35,45]}
+];
+
+var NORMS = [
+  {date:'04/10/2020', name:'Decreto 789/2020', rel:'gen', chip:'Marco o trámite',
+   short:'Fija D.E. de 0% para bienes finales industriales y 3% para insumos elaborados; reintegros de 7% y 5%.',
+   pts:['Marco general de la política industrial de exportación.','No trata la pasta celulósica de forma específica.'],
+   src:'https://kpmg.com/ar/es/home/media/novedades-tax/2020/10/5-octubre-2020.html', lbl:'Resumen de KPMG'},
+  {date:'30/12/2020', name:'Decreto 1060/2020', rel:'prob', chip:'Base probable',
+   short:'Desde el 01/01/2021, D.E. de 4,5% para insumos básicos industriales.',
+   pts:['Es la base del 4,5% que se atribuye a la celulosa desde 2021.','Falta confirmar en el anexo que la posición 4703 esté en esa categoría.'],
+   src:'https://www.argentina.gob.ar/normativa/nacional/decreto-1060-2020-345886/texto', lbl:'Texto oficial'},
+  {date:'05/04/2022', name:'Resolución 212/2022', rel:'gen', chip:'Marco o trámite',
+   short:'Simplifica el trámite del certificado de Draw Back, con vigencia de 5 años.',
+   pts:['No cambia alícuotas.','Contenido según Perplexity; no se contrastó con el texto oficial.'],
+   src:'https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-212-2022-363194', lbl:'Norma en argentina.gob.ar'},
+  {date:'06/09/2023', name:'Decreto 462/2023', rel:'sin', chip:'Sin vínculo verificado',
+   short:'Nuevas alícuotas de D.E. para unas 350 posiciones agroindustriales.',
+   pts:['Rige desde el 01/09/2023.','No se encontró vínculo con la pasta de celulosa.'],
+   src:'https://www.argentina.gob.ar/normativa/nacional/decreto-462-2023-389424/texto', lbl:'Texto oficial'},
+  {date:'03/10/2023', name:'Decreto 506/2023', rel:'sin', chip:'Sin vínculo verificado',
+   short:'Suspende el D.E. (0%) hasta el 31/12/2023 para las posiciones de su anexo.',
+   pts:['Los decretos posteriores que lo prorrogaron lo vinculan con productos lácteos.'],
+   src:'https://www.argentina.gob.ar/normativa/nacional/norma-390901/texto', lbl:'Texto oficial'},
+  {date:'25/10/2023', name:'Decreto 557/2023', rel:'tbc', chip:'Por confirmar',
+   short:'Aprueba la NCM (VII Enmienda) con sus reintegros a la exportación por posición.',
+   pts:['El reintegro de la posición 4703 está en sus anexos, que no se pudieron consultar.','No fija por sí solo un 0% para la celulosa.'],
+   src:'https://www.boletinoficial.gob.ar/detalleAviso/primera/297038/20231026', lbl:'Boletín Oficial'},
+  {date:'03/01/2024', name:'Decreto 9/2024', rel:'sin', chip:'Sin vínculo verificado',
+   short:'Prorroga hasta el 30/06/2024 la suspensión del D.E.; reintegro de 0% para lácteos.',
+   pts:['Sin vínculo verificado con la celulosa.'],
+   src:'https://www.boletinoficial.gob.ar/detalleAviso/primera/301582/20240104', lbl:'Boletín Oficial'},
+  {date:'28/06/2024', name:'Decreto 557/2024', rel:'sin', chip:'Sin vínculo verificado',
+   short:'Prorroga hasta el 30/06/2025 la suspensión del D.E.; reintegro de 0% para lácteos.',
+   pts:['Sus considerandos se refieren a productos lácteos.'],
+   src:'https://www.boletinoficial.gob.ar/detalleAviso/primera/309813/20240701', lbl:'Boletín Oficial'},
+  {date:'25/01/2025', name:'Decreto 38/2025', rel:'ok', chip:'Afecta a la celulosa',
+   short:'Pone el D.E. en 0% para las posiciones de su Anexo I, entre ellas la 4703.11.00.',
+   pts:['Vigente desde su publicación, el 27/01/2025.','Incluye también las posiciones 4701, 4702, 4706 y 4707.','No incluye 4703.21.00 ni 4703.29.00 (pastas blanqueadas).'],
+   src:'https://www.cira.org.ar/es/servicios/normativas-servicios/decreto/decreto-38-2025/', lbl:'Texto del decreto'},
+  {date:'06/05/2025', name:'Decreto 305/2025', rel:'tbc', chip:'Por confirmar',
+   short:'Pone el D.E. en 0% para unas 4.411 posiciones industriales, desde el 08/05/2025.',
+   pts:['Su anexo no pudo consultarse: falta comprobar si incluye la pasta blanqueada.'],
+   src:'https://www.argentina.gob.ar/normativa/nacional/decreto-305-2025-412414/texto', lbl:'Texto oficial'},
+  {date:'22/09/2025', name:'Decreto 682/2025', rel:'sin', chip:'Sin vínculo verificado',
+   short:'D.E. de 0% para granos hasta el 31/10/2025 o hasta USD 7.000 millones en ventas registradas.',
+   pts:['No tiene impacto directo en la celulosa.'],
+   src:'https://www.argentina.gob.ar/normativa/nacional/norma-417789/texto', lbl:'Texto oficial'},
+  {date:'25/11/2025', name:'Resolución General 5792/2025 (ARCA)', rel:'gen', chip:'Marco o trámite',
+   short:'Permite expresar en dólares los reintegros de exportación pendientes al 31/10/2025.',
+   pts:['La adhesión se habilitó del 05/12/2025 al 01/03/2026.','No cambia alícuotas.'],
+   src:'https://www.boletinoficial.gob.ar/detalleAviso/primera/334907/20251125', lbl:'Boletín Oficial'}
+];
+var RELCLASS = {ok:'ok', prob:'prob', tbc:'tbc', gen:'gen', sin:'sin'};
+
+var DE_ROWS = [
+  ['2020','4,5%','no','No respaldado','El 4,5% rige desde el 01/01/2021; en 2020 regía el esquema del Decreto 793/2018.'],
+  ['2021','4,5%','prob','Probable','Decreto 1060/2020: 4,5% para insumos básicos; falta confirmar la posición 4703.'],
+  ['2022','4,5%','prob','Probable','Sin cambios verificados para la posición 4703.'],
+  ['2023','4,5%','prob','Probable','Los decretos 462/2023 y 506/2023 no se vinculan con la celulosa.'],
+  ['2024','0%','no','No respaldado','No hay norma que lleve la posición 4703 a 0% en 2024; lo probable es 4,5% hasta enero de 2025.'],
+  ['2025','0%','prob','Parcialmente confirmado','0% desde el 27/01/2025 para la posición 4703.11.00 (Decreto 38/2025); las pastas blanqueadas están por confirmar.']
+];
+
+/* ---------- Tooltip ---------- */
+var tip = document.getElementById('tip');
+var TIPS = {};
+function posTip(x, y){
+  var r = tip.getBoundingClientRect();
+  var left = x + 14, top = y + 14;
+  if (left + r.width > window.innerWidth - 8) left = x - r.width - 14;
+  if (top + r.height > window.innerHeight - 8) top = y - r.height - 14;
+  tip.style.left = Math.max(8, left) + 'px';
+  tip.style.top = Math.max(8, top) + 'px';
+}
+function showTip(html, x, y){ tip.innerHTML = html; tip.classList.add('on'); posTip(x, y); }
+function hideTip(){ tip.classList.remove('on'); }
+function bindTips(root){
+  root.querySelectorAll('[data-k]').forEach(function(el){
+    var html = TIPS[el.getAttribute('data-k')];
+    if (!html) return;
+    el.addEventListener('pointerenter', function(e){ showTip(html, e.clientX, e.clientY); });
+    el.addEventListener('pointermove', function(e){ posTip(e.clientX, e.clientY); });
+    el.addEventListener('pointerleave', function(e){ if (e.pointerType !== 'touch') hideTip(); });
+    el.addEventListener('focus', function(){ var r = el.getBoundingClientRect(); showTip(html, r.left + r.width / 2, r.top); });
+    el.addEventListener('blur', hideTip);
+  });
+}
+document.addEventListener('pointerdown', function(e){ if (!e.target.closest || !e.target.closest('[data-k]')) hideTip(); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape') hideTip(); });
+
+function svgOpen(w, h, label){
+  return '<svg viewBox="0 0 ' + w + ' ' + h + '" width="' + w + '" height="' + h + '" role="group" aria-label="' + label + '">';
+}
+function tipFor(d){
+  var s = '<b>' + d.y + (d.prov ? ' (provisorio)' : '') + '</b><br>USD ' + nf(d.M) + ' millones';
+  if (d.tn) s += '<br>' + nf(d.tn, 0) + ' toneladas<br>' + nf(d.px, 0) + ' USD por tonelada';
+  else s += '<br>Toneladas: sin dato';
+  return s + '<br><span style="opacity:.75">' + d.src + '</span>';
+}
+
+/* ---------- Anillos de portada ---------- */
+function renderRings(){
+  var el = document.getElementById('rings');
+  var C = 280, R = 266, r0 = 10;
+  var total = DATA.reduce(function(a, d){ return a + d.M; }, 0);
+  var k = (R - r0) / total;
+  var fills = ['#B7D6C4','#9CC7AE','#7FB398','#63A084','#2F7A64','url(#hatchDeep)'];
+  var txt = ['#0F2E29','#0F2E29','#0F2E29','#0F2E29','#F1F5F2','#F1F5F2'];
+  var prev = r0;
+  var s = '<svg viewBox="0 0 560 560" role="group" aria-label="Anillos concéntricos: cada anillo es un año exportado, de 2020 en el centro a 2025 en el borde; el grosor indica el valor en millones de dólares">';
+  s += '<circle cx="' + C + '" cy="' + C + '" r="' + r0 + '" fill="#0F2E29"/>';
+  DATA.forEach(function(d, i){
+    var w = d.M * k, mid = prev + w / 2;
+    TIPS['ring-' + d.y] = tipFor(d);
+    s += '<g class="ring" style="--i:' + i + '" tabindex="0" role="img" aria-label="' + d.y + ': USD ' + nf(d.M) + ' millones' + (d.prov ? ', dato provisorio' : '') + '" data-k="ring-' + d.y + '">' +
+      '<circle cx="' + C + '" cy="' + C + '" r="' + mid.toFixed(2) + '" fill="none" stroke="' + fills[i] + '" stroke-width="' + w.toFixed(2) + '"/>' +
+      '<circle cx="' + C + '" cy="' + C + '" r="' + (prev + w).toFixed(2) + '" fill="none" stroke="rgba(15,46,41,.35)" stroke-width=".8"/>' +
+      '<text class="rl" x="' + (C + mid).toFixed(2) + '" y="' + (C - 5) + '" text-anchor="middle" fill="' + txt[i] + '" pointer-events="none">' + d.y + (d.prov ? '*' : '') + '</text>' +
+      '<text class="rv" x="' + (C + mid).toFixed(2) + '" y="' + (C + 15) + '" text-anchor="middle" fill="' + txt[i] + '" pointer-events="none">' + nf(d.M) + '</text>' +
+      '</g>';
+    prev += w;
+  });
+  s += '</svg>';
+  el.innerHTML = s;
+  bindTips(el);
+}
+
+/* ---------- Gráfico 1: valor FOB ---------- */
+function renderFob(){
+  var el = document.getElementById('chart-fob');
+  var w = Math.max(300, el.clientWidth), h = w < 520 ? 330 : 390;
+  var m = {l:46, r:8, t:30, b:64};
+  var pw = w - m.l - m.r, ph = h - m.t - m.b, yMax = 160, n = DATA.length, bw = pw / n, barW = Math.min(72, bw * 0.64);
+  var s = svgOpen(w, h, 'Gráfico de barras del valor exportado por año, en millones de dólares');
+  [0, 40, 80, 120, 160].forEach(function(v){
+    var y = m.t + ph - v / yMax * ph;
+    s += '<line x1="' + m.l + '" x2="' + (w - m.r) + '" y1="' + y + '" y2="' + y + '" class="grid"/>' +
+         '<text x="' + (m.l - 8) + '" y="' + (y + 4) + '" text-anchor="end" class="t-axis">' + v + '</text>';
+  });
+  s += '<text x="0" y="14" class="t-axis">USD M</text>';
+  DATA.forEach(function(d, i){
+    var x = m.l + i * bw + (bw - barW) / 2, bh = d.M / yMax * ph, y = m.t + ph - bh, cx = x + barW / 2;
+    var yoy = i ? (d.fob / DATA[i - 1].fob - 1) * 100 : null;
+    var label = d.y + ': USD ' + nf(d.M) + ' millones' + (d.prov ? ', dato provisorio' : '') + (yoy !== null ? ', ' + sg(yoy) + ' frente al año anterior' : '');
+    var t = tipFor(d);
+    if (yoy !== null) t += '<br><b>' + sg(yoy) + '</b> frente a ' + DATA[i - 1].y;
+    TIPS['fob-' + d.y] = t;
+    s += '<g class="hit" tabindex="0" role="img" aria-label="' + label + '" data-k="fob-' + d.y + '">' +
+      '<rect x="' + (m.l + i * bw) + '" y="' + m.t + '" width="' + bw + '" height="' + (ph + m.b) + '" fill="#000" fill-opacity="0"/>' +
+      '<rect x="' + x + '" y="' + y + '" width="' + barW + '" height="' + bh + '" rx="2" class="bar' + (d.prov ? ' prov' : '') + '"/>' +
+      '<text x="' + cx + '" y="' + (y - 8) + '" text-anchor="middle" class="t-val">' + nf(d.M) + '</text>' +
+      '<text x="' + cx + '" y="' + (m.t + ph + 20) + '" text-anchor="middle" class="t-year">' + d.y + (d.prov ? '*' : '') + '</text>' +
+      '<text x="' + cx + '" y="' + (m.t + ph + 39) + '" text-anchor="middle" class="t-yoy ' + (yoy === null ? '' : (yoy >= 0 ? 'up' : 'down')) + '"' + (yoy === null ? ' style="fill:#46605A"' : '') + '>' + (yoy === null ? 'año base' : sg(yoy)) + '</text>' +
+      '</g>';
+  });
+  s += '</svg>';
+  el.innerHTML = s;
+  bindTips(el);
+}
+
+/* ---------- Gráfico 2: toneladas y precio ---------- */
+function renderVol(){
+  var el = document.getElementById('chart-vol');
+  var w = Math.max(300, el.clientWidth), h = 392;
+  var m = {l:46, r:8};
+  var pw = w - m.l - m.r, n = DATA.length, bw = pw / n, barW = Math.min(72, bw * 0.64);
+  var a = {t:34, h:130, max:240};
+  var b = {t:222, h:120, min:600, max:900};
+  var s = svgOpen(w, h, 'Dos gráficos: toneladas exportadas por año y precio promedio por tonelada');
+  s += '<text x="0" y="14" class="panel-title">Toneladas exportadas (miles)</text>';
+  [0, 80, 160, 240].forEach(function(v){
+    var y = a.t + a.h - v / a.max * a.h;
+    s += '<line x1="' + m.l + '" x2="' + (w - m.r) + '" y1="' + y + '" y2="' + y + '" class="grid"/><text x="' + (m.l - 8) + '" y="' + (y + 4) + '" text-anchor="end" class="t-axis">' + v + '</text>';
+  });
+  s += '<text x="0" y="' + (b.t - 22) + '" class="panel-title">Precio promedio (USD por tonelada)</text>';
+  [600, 700, 800, 900].forEach(function(v){
+    var y = b.t + b.h - (v - b.min) / (b.max - b.min) * b.h;
+    s += '<line x1="' + m.l + '" x2="' + (w - m.r) + '" y1="' + y + '" y2="' + y + '" class="grid"/><text x="' + (m.l - 8) + '" y="' + (y + 4) + '" text-anchor="end" class="t-axis">' + v + '</text>';
+  });
+  var pts = [];
+  DATA.forEach(function(d, i){
+    var x = m.l + i * bw + (bw - barW) / 2, cx = x + barW / 2;
+    TIPS['vol-' + d.y] = tipFor(d);
+    var label = d.y + (d.tn ? ': ' + nf(d.tn, 0) + ' toneladas y ' + nf(d.px, 0) + ' dólares por tonelada' : ': sin dato de toneladas');
+    s += '<g class="hit" tabindex="0" role="img" aria-label="' + label + '" data-k="vol-' + d.y + '">' +
+      '<rect x="' + (m.l + i * bw) + '" y="' + a.t + '" width="' + bw + '" height="' + (b.t + b.h + 30 - a.t) + '" fill="#000" fill-opacity="0"/>';
+    if (d.tn){
+      var bh = d.tn / 1000 / a.max * a.h, y = a.t + a.h - bh;
+      s += '<rect x="' + x + '" y="' + y + '" width="' + barW + '" height="' + bh + '" rx="2" class="bar' + (d.prov ? ' prov' : '') + '"/>' +
+           '<text x="' + cx + '" y="' + (y - 7) + '" text-anchor="middle" class="t-val">' + nf(d.tn / 1000, 1) + '</text>';
+      var py = b.t + b.h - (d.px - b.min) / (b.max - b.min) * b.h;
+      pts.push({x:cx, y:py, d:d});
+    } else {
+      s += '<rect x="' + x + '" y="' + (a.t + a.h - 46) + '" width="' + barW + '" height="46" rx="2" fill="none" stroke="#8AA095" stroke-dasharray="4 3"/>' +
+           '<text x="' + cx + '" y="' + (a.t + a.h - 19) + '" text-anchor="middle" class="t-small">s/d</text>' +
+           '<text x="' + cx + '" y="' + (b.t + b.h / 2 + 4) + '" text-anchor="middle" class="t-small">s/d</text>';
+    }
+    s += '<text x="' + cx + '" y="' + (b.t + b.h + 24) + '" text-anchor="middle" class="t-year">' + d.y + (d.prov ? '*' : '') + '</text></g>';
+  });
+  for (var i = 0; i < pts.length - 1; i++){
+    var consecutive = (pts[i + 1].d.y - pts[i].d.y) === 1;
+    s += '<line x1="' + pts[i].x + '" y1="' + pts[i].y + '" x2="' + pts[i + 1].x + '" y2="' + pts[i + 1].y + '" stroke="#2A6F97" stroke-width="2.5"' + (consecutive ? '' : ' stroke-dasharray="5 5"') + ' pointer-events="none"/>';
+  }
+  pts.forEach(function(p){
+    s += '<circle cx="' + p.x + '" cy="' + p.y + '" r="6" fill="#2A6F97" stroke="#F1F5F2" stroke-width="2" pointer-events="none"/>' +
+         '<text x="' + p.x + '" y="' + (p.y - 13) + '" text-anchor="middle" class="t-val" pointer-events="none">' + nf(p.d.px, 0) + '</text>';
+  });
+  s += '</svg>';
+  el.innerHTML = s;
+  bindTips(el);
+}
+
+/* ---------- Gráfico 3: peso en exportaciones provinciales ---------- */
+function renderPeso(){
+  var el = document.getElementById('chart-peso');
+  var html = '';
+  PESO.forEach(function(p){
+    var d = DATA.filter(function(x){ return x.y === p.y; })[0];
+    var pct = d.fob / p.total * 100;
+    html += '<div class="peso-row" role="listitem">' +
+      '<span class="peso-year">' + p.y + (p.prov ? '*' : '') + '</span>' +
+      '<div class="peso-track" role="img" aria-label="' + p.y + ': celulosa es el ' + nf(pct) + '% de las exportaciones de Misiones"><div class="peso-fill' + (p.prov ? ' prov' : '') + '" style="width:' + pct.toFixed(2) + '%"></div></div>' +
+      '<div class="peso-val"><div class="peso-pct">' + nf(pct) + '%</div><div class="peso-sub">USD ' + nf(d.M, 1) + ' M de ' + nf(p.total / 1e6, 1) + ' M</div></div>' +
+      '</div>';
+  });
+  el.innerHTML = html;
+}
+
+/* ---------- Gráfico 4: destinos (rangos) ---------- */
+function rangeText(r){ return r[0] === r[1] ? nf(r[0], 1) + '%' : 'entre ' + nf(r[0], 0) + '% y ' + nf(r[1], 0) + '%'; }
+function renderDest(){
+  var el = document.getElementById('chart-dest');
+  var w = Math.max(300, el.clientWidth), h = w < 520 ? 320 : 370;
+  var m = {l:44, r:8, t:24, b:40};
+  var pw = w - m.l - m.r, ph = h - m.t - m.b, yMax = 50, n = DEST.length, gw = pw / n;
+  var slot = Math.min(30, gw / 3.4), barW = Math.min(20, slot * 0.7);
+  var s = svgOpen(w, h, 'Gráfico de rangos estimados de participación de Brasil, China y Estados Unidos en las exportaciones de celulosa, por año');
+  [0, 10, 20, 30, 40, 50].forEach(function(v){
+    var y = m.t + ph - v / yMax * ph;
+    s += '<line x1="' + m.l + '" x2="' + (w - m.r) + '" y1="' + y + '" y2="' + y + '" class="grid"/><text x="' + (m.l - 8) + '" y="' + (y + 4) + '" text-anchor="end" class="t-axis">' + v + '%</text>';
+  });
+  DEST.forEach(function(d, i){
+    var cx = m.l + i * gw + gw / 2;
+    s += '<text x="' + cx + '" y="' + (m.t + ph + 22) + '" text-anchor="middle" class="t-year">' + d.y + '</text>';
+    SERIES.forEach(function(sr, j){
+      var r = d[sr.k], x = cx + (j - 1) * slot, official = d.off && d.off.indexOf(sr.k) >= 0;
+      var key = 'dest-' + d.y + '-' + sr.k;
+      TIPS[key] = '<b>' + sr.name + ' ' + d.y + '</b><br>' + rangeText(r) + '<br><span style="opacity:.75">' + (official ? 'Dato oficial según Perplexity, sin contrastar' : 'Estimado') + '</span>';
+      var label = sr.name + ' ' + d.y + ': ' + rangeText(r) + (official ? ', dato oficial sin contrastar' : ', estimado');
+      s += '<g class="hit" tabindex="0" role="img" aria-label="' + label + '" data-k="' + key + '">';
+      if (r[0] === r[1]){
+        var y0 = m.t + ph - r[0] / yMax * ph;
+        s += '<rect x="' + (x - slot / 2) + '" y="' + (y0 - 14) + '" width="' + slot + '" height="28" fill="#000" fill-opacity="0"/>' +
+             '<circle class="mark" cx="' + x + '" cy="' + y0 + '" r="6" fill="' + sr.col + '" stroke="#F1F5F2" stroke-width="1.5"/>';
+      } else {
+        var yTop = m.t + ph - r[1] / yMax * ph, hh = (r[1] - r[0]) / yMax * ph;
+        s += '<rect x="' + (x - slot / 2) + '" y="' + (yTop - 4) + '" width="' + slot + '" height="' + (hh + 8) + '" fill="#000" fill-opacity="0"/>' +
+             '<rect class="bar" x="' + (x - barW / 2) + '" y="' + yTop + '" width="' + barW + '" height="' + hh + '" rx="2" style="fill:url(#' + sr.pat + ');stroke:' + sr.col + ';stroke-width:1.5"/>';
+      }
+      s += '</g>';
+    });
+  });
+  s += '</svg>';
+  el.innerHTML = s;
+  bindTips(el);
+}
+
+/* ---------- Tablas ---------- */
+function renderTables(){
+  var t = '<table><thead><tr><th>Año</th><th class="num">FOB (USD)</th><th class="num">Toneladas</th><th class="num">USD por tonelada</th><th>Fuente</th></tr></thead><tbody>';
+  DATA.forEach(function(d){
+    t += '<tr><td>' + d.y + (d.prov ? '*' : '') + '</td><td class="num">' + nf(d.fob, 0) + '</td><td class="num">' + (d.tn ? nf(d.tn, 0) : 's/d') + '</td><td class="num">' + (d.px ? nf(d.px, 0) : 's/d') + '</td><td>' + d.src + '</td></tr>';
+  });
+  document.getElementById('tbl-fob').innerHTML = t + '</tbody></table>';
+
+  var u = '<table><thead><tr><th>Año</th><th>Brasil</th><th>China</th><th>Estados Unidos</th></tr></thead><tbody>';
+  DEST.forEach(function(d){
+    u += '<tr><td>' + d.y + '</td>' + SERIES.map(function(sr){ return '<td>' + rangeText(d[sr.k]).replace(/^entre /, '') + '</td>'; }).join('') + '</tr>';
+  });
+  document.getElementById('tbl-dest').innerHTML = u + '</tbody></table>';
+
+  var de = '';
+  DE_ROWS.forEach(function(r){
+    de += '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td><td><span class="chip ' + r[2] + '">' + r[3] + '</span></td><td>' + r[4] + '</td></tr>';
+  });
+  document.getElementById('tbl-de').innerHTML = de;
+}
+
+/* ---------- Línea de tiempo ---------- */
+function renderTimeline(){
+  var ol = document.getElementById('timeline'), html = '';
+  NORMS.forEach(function(n){
+    html += '<li data-rel="' + n.rel + '"><details class="norm"><summary>' +
+      '<span class="norm-date">' + n.date + '</span>' +
+      '<span><span class="norm-name">' + n.name + '</span><span class="chip ' + RELCLASS[n.rel] + '">' + n.chip + '</span><span class="norm-short">' + n.short + '</span></span>' +
+      '</summary><div class="norm-body"><ul>' + n.pts.map(function(p){ return '<li>' + p + '</li>'; }).join('') + '</ul>' +
+      '<a href="' + n.src + '">' + n.lbl + '</a></div></details></li>';
+  });
+  ol.innerHTML = html;
+  var btn = document.getElementById('tl-filter');
+  btn.addEventListener('click', function(){
+    var on = btn.getAttribute('aria-pressed') !== 'true';
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    ol.querySelectorAll('li').forEach(function(li){
+      var rel = li.getAttribute('data-rel');
+      li.hidden = on && (rel === 'gen' || rel === 'sin');
+    });
+  });
+}
+
+/* ---------- Enlaces del pie ---------- */
+function fillLinks(){
+  var d = document.getElementById('link-drive'), g = document.getElementById('link-github');
+  d.innerHTML = LINKS.drive ? '<a href="' + LINKS.drive + '">Archivos del proyecto en Google Drive</a> (dos Excel y un Word)' : 'Archivos en Google Drive: enlace pendiente de completar en <code>index.html</code>.';
+  g.innerHTML = LINKS.github ? '<a href="' + LINKS.github + '">Repositorio en GitHub</a> con el código y el README' : 'Repositorio en GitHub: enlace pendiente de completar en <code>index.html</code>.';
+}
+
+function renderCharts(){ renderFob(); renderVol(); renderDest(); }
+var timer;
+window.addEventListener('resize', function(){ clearTimeout(timer); timer = setTimeout(function(){ hideTip(); renderCharts(); }, 150); });
+
+renderRings();
+renderCharts();
+renderPeso();
+renderTables();
+renderTimeline();
+fillLinks();
+})();
+</script>
+</body>
+</html>
